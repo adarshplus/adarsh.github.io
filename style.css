@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background: url(bgag.jpg) no-repeat center;
+  justify-content: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.profile-card {
+  height: 460px;
+  width: 450px;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card-header {
+  background-color: #1e272e;
+  padding: 60px 48px;
+}
+
+.card-img {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #74b9ff, #e667e6);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+.card-img img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.desc {
+  font-size: 18px;
+  color: #e66767;
+}
+
+.icon {
+  margin-top: 40px;
+}
+.icon a {
+  color: #f2f2f2;
+  width: 56px;
+  font-size: 22px;
+  transition: 0.3s linear;
+}
+
+.icon a:hover {
+  color: #e66767;
+}
+.contact {
+  display: inline-block;
+  padding: 12px 50px;
+  color: #2d2e2d;
+  border: 4px solid #ffdd59;
+  border-radius: 6px;
+  margin-top: 50px;
+  transition: 0.3s linear;
+}
+
+.contact:hover {
+  background-color: #3742fa;
+  color: #9b59b6;
+}
+
+.contact a {
+  color: #74b9ff;
+}
